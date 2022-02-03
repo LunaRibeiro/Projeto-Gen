@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\lunar\Downloads\Projeto Generation\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+4182086058.index
+574752255.index
