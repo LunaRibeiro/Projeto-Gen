@@ -20,8 +20,8 @@ public class pessoa {
 		//está com sintomas
 		if (sintomas == 1) {
 			
-			int rc;
-			int dias = 0;
+			int rc;	//armazena as respostas das perguntas
+			int dias = 0;	//armazena a quantidade de dias com sintomas
 
 			do {
 				System.out.println("\n-----------------------------");
@@ -88,9 +88,10 @@ public class pessoa {
 				System.out.println("\n-----------------------------");
 				System.out.println("Sem suspeita mas, faça um teste.");
 			} else {
-
+				
+				//se tiver tido contato com caso confirmado
 				System.out.println("\n-----------------------------");
-				System.out.println("O último contato foi a 5 dias atrás?\n1 - Sim\n2 - Não");
+				System.out.println("O último contato foi há 5 dias?\n1 - Sim\n2 - Não");
 				rc = sc.nextInt();
 
 				if (rc == 1) {
@@ -140,6 +141,8 @@ public class pessoa {
 						}
 					}
 				}
+				
+				//se não tiver tido contato com algum caso confirmado
 				if (rc == 2) {
 					System.out.println("\n-----------------------------");
 					System.out.println("Aguarde alguns dias.\n\nMantém assintomático?\n1 - Sim\n2 - Não");
@@ -187,6 +190,8 @@ public class pessoa {
 							}
 						}
 					}
+					
+					//não mantém assintomático
 					if (rc == 2) {
 						do {
 							System.out.println("\n-----------------------------");
